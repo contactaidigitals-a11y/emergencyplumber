@@ -79,7 +79,26 @@ summary:focus-visible {
   gap: 24px;
 }
 
-.topline a { text-decoration: underline; text-underline-offset: 3px; }
+.topline-call {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  padding: 4px 9px;
+  background: var(--navy-deep);
+  color: var(--white);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: .67rem;
+  font-weight: 800;
+  letter-spacing: .03em;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.topline-call:hover { background: #0b3048; transform: translateY(-1px); }
+.topline-call-label { color: var(--orange); font-size: .55rem; letter-spacing: .1em; text-transform: uppercase; }
+.topline-call > span:last-child { color: var(--mint); }
 
 .site-header {
   position: sticky;
@@ -1149,7 +1168,7 @@ footer { padding: 48px 0 24px; background: var(--navy-deep); color: var(--white)
   .topline { font-size: .61rem; }
   .topline-inner { min-height: 31px; }
   .topline-inner > span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-  .topline a { display: none; }
+  .topline-call { padding-inline: 8px; }
   .header-inner { min-height: 68px; }
   .brand-mark { width: 40px; height: 40px; font-size: .9rem; }
   .brand-name { font-size: .78rem; }
@@ -1288,6 +1307,7 @@ footer { padding: 48px 0 24px; background: var(--navy-deep); color: var(--white)
   .call-card-number { margin-inline: -18px; padding-inline: 18px; }
   .coverage-stamp { display: none; }
   .mobile-call-bar > span:nth-child(2) { display: none; }
+  .topline-call-label { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
