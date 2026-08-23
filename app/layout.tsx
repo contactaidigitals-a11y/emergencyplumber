@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cm-emergency-plumbing-help.andreiacalinescu.chatgpt.site"),
-  title: "ReadyCall Plumbing 24/7 | Emergency Plumber Across CM",
+  title: "Emergency Plumbers | 24/7 Across All CM Postcodes",
   description:
     "24/7 emergency plumbing for leaks, burst pipes, blockages and urgent problems across every CM postcode. Call 07930 392 114.",
   icons: {
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "ReadyCall Plumbing 24/7 | Open 24/7",
+    title: "Emergency Plumbers | Open 24/7",
     description:
       "24/7 emergency plumbing help across every postcode beginning with CM. Call 07930 392 114.",
     images: [
       {
         url: "/og.png",
-        alt: "ReadyCall Plumbing 24/7 — emergency plumber across all CM postcodes",
+        alt: "Emergency Plumbers — 24/7 emergency plumbing across all CM postcodes",
       },
     ],
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ReadyCall Plumbing 24/7 | Open 24/7",
+    title: "Emergency Plumbers | Open 24/7",
     description:
       "24/7 emergency plumbing help across every postcode beginning with CM.",
     images: ["/og.png"],

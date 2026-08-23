@@ -80,13 +80,13 @@ summary:focus-visible {
 }
 
 .topline-call {
-  min-height: 28px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   flex: 0 0 auto;
-  padding: 4px 9px;
-  background: var(--navy-deep);
+  min-height: 34px;
+  padding: 5px 13px;
+  background: #16a36f;
   color: var(--white);
   border-radius: 3px;
   font-family: var(--font-mono);
@@ -96,9 +96,9 @@ summary:focus-visible {
   transition: background 160ms ease, transform 160ms ease;
 }
 
-.topline-call:hover { background: #0b3048; transform: translateY(-1px); }
-.topline-call-label { color: var(--orange); font-size: .55rem; letter-spacing: .1em; text-transform: uppercase; }
-.topline-call > span:last-child { color: var(--mint); }
+.topline-call:hover { background: #0c865a; transform: translateY(-1px); }
+.topline-call-label { color: #d9ffe9; font-size: .55rem; letter-spacing: .1em; text-transform: uppercase; }
+.topline-call > span:last-child { color: #d9ffe9; }
 
 .site-header {
   position: sticky;
@@ -182,8 +182,9 @@ summary:focus-visible {
   align-items: center;
   gap: 10px;
   padding: 9px 15px;
-  border: 1px solid rgb(9 38 58 / .16);
-  background: var(--white);
+  border: 1px solid #109061;
+  background: #16a36f;
+  color: var(--white);
   border-radius: 6px;
   box-shadow: 0 4px 16px rgb(9 38 58 / .06);
   transition: transform 160ms ease, box-shadow 160ms ease;
@@ -191,7 +192,7 @@ summary:focus-visible {
 
 .header-call:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgb(9 38 58 / .12);
+  box-shadow: 0 8px 24px rgb(22 163 111 / .28);
 }
 
 .phone-dot {
@@ -218,7 +219,7 @@ summary:focus-visible {
 .header-call > span:last-child { display: grid; }
 
 .header-call small {
-  color: var(--ink-soft);
+  color: #d9ffe9;
   font-size: .66rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -339,12 +340,12 @@ summary:focus-visible {
 .button:hover { transform: translateY(-2px); }
 
 .button-primary {
-  background: var(--orange);
+  background: #16a36f;
   color: var(--navy-deep);
   box-shadow: 0 10px 22px rgb(242 95 58 / .23);
 }
 
-.button-primary:hover { background: #ff704b; box-shadow: 0 13px 28px rgb(242 95 58 / .3); }
+.button-primary:hover { background: #0c865a; box-shadow: 0 13px 28px rgb(22 163 111 / .3); }
 
 .button-secondary {
   background: rgb(255 255 255 / .62);
