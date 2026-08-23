@@ -1,5 +1,5 @@
-const PHONE_DISPLAY = "07443 757 519";
-const PHONE_HREF = "tel:+447443757519";
+const PHONE_DISPLAY = "07930 392 114";
+const PHONE_HREF = "tel:+447930392114";
 
 const services = [
   { number: "01", title: "Burst pipes", text: "Help with sudden pipe failures, escaping water and urgent isolation." },
@@ -48,8 +48,8 @@ export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Plumber",
-    name: "CM ReadyCall Plumbing",
-    telephone: "+447443757519",
+    name: "Harlow ReadyCall Plumbing 24/7",
+    telephone: "+447930392114",
     areaServed: "CM postcode area, United Kingdom",
     openingHours: "Mo-Su 00:00-23:59",
     description: "24/7 emergency plumbing help for homes and businesses across every CM postcode.",
@@ -68,9 +68,9 @@ export default function Home() {
 
       <header className="site-header">
         <div className="shell header-inner">
-          <a className="brand" href="#top" aria-label="CM ReadyCall Plumbing home">
-            <span className="brand-mark" aria-hidden="true">CM</span>
-            <span className="brand-name"><strong>ReadyCall</strong><span>Plumbing 24/7</span></span>
+          <a className="brand" href="#top" aria-label="Harlow ReadyCall Plumbing 24/7 home">
+            <span className="brand-mark" aria-hidden="true">HR</span>
+            <span className="brand-name"><strong>Harlow ReadyCall</strong><span>Plumbing 24/7</span></span>
           </a>
 
           <nav className="desktop-nav" aria-label="Main navigation">
@@ -230,11 +230,11 @@ export default function Home() {
 
       <footer>
         <div className="shell footer-main">
-          <a className="brand brand-footer" href="#top" aria-label="CM ReadyCall Plumbing home"><span className="brand-mark" aria-hidden="true">CM</span><span className="brand-name"><strong>ReadyCall</strong><span>Plumbing 24/7</span></span></a>
+          <a className="brand brand-footer" href="#top" aria-label="Harlow ReadyCall Plumbing 24/7 home"><span className="brand-mark" aria-hidden="true">HR</span><span className="brand-name"><strong>Harlow ReadyCall</strong><span>Plumbing 24/7</span></span></a>
           <p>24/7 emergency plumbing help across every postcode beginning with CM.</p>
           <a className="footer-phone" href={PHONE_HREF}>Call {PHONE_DISPLAY}</a>
         </div>
-        <div className="shell footer-bottom"><span>CM ReadyCall Plumbing</span><span>Open 24/7 • Serving the complete CM postcode area</span></div>
+        <div className="shell footer-bottom"><span>Harlow ReadyCall Plumbing 24/7</span><span>Open 24/7 • Serving the complete CM postcode area</span></div>
       </footer>
 
       <a className="mobile-call-bar" href={PHONE_HREF} aria-label={`Call emergency plumber on ${PHONE_DISPLAY}`}>

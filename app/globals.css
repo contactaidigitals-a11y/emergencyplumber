@@ -126,7 +126,7 @@ summary:focus-visible {
   letter-spacing: -.02em;
 }
 
-.brand-name strong { font-size: 1.08rem; }
+.brand-name strong { font-size: 1.02rem; }
 .brand-name span { color: var(--ink-soft); }
 
 .desktop-nav {
