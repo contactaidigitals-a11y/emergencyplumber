@@ -62,7 +62,6 @@ export default function Home() {
       <div className="topline">
         <div className="shell topline-inner">
           <span>Open 24/7 • Emergency plumbing across every CM postcode</span>
-          <a className="topline-call" href={PHONE_HREF} aria-label={`Call ${PHONE_DISPLAY}`}><span className="topline-call-label">Call now</span><strong>{PHONE_DISPLAY}</strong><span aria-hidden="true">↗</span></a>
         </div>
       </div>
 

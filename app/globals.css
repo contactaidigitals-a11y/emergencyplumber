@@ -121,7 +121,8 @@ summary:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  flex-shrink: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .brand-mark {
@@ -145,7 +146,7 @@ summary:focus-visible {
   letter-spacing: -.02em;
 }
 
-.brand-name strong { font-size: 1.02rem; }
+.brand-name strong { font-size: clamp(1.35rem, 2.7vw, 2rem); letter-spacing: -.045em; }
 .brand-name span { color: var(--ink-soft); }
 
 .sticky-call {
@@ -1201,8 +1202,8 @@ footer { padding: 48px 0 24px; background: var(--navy-deep); color: var(--white)
   .topline-call { padding-inline: 8px; }
   .header-inner { min-height: 68px; }
   .brand-mark { width: 40px; height: 40px; font-size: .9rem; }
-  .brand-name { font-size: .78rem; }
-  .brand-name strong { font-size: .96rem; }
+  .brand-name { font-size: .76rem; }
+  .brand-name strong { font-size: 1.22rem; }
 
   .header-call {
     width: 44px;
@@ -1343,7 +1344,8 @@ footer { padding: 48px 0 24px; background: var(--navy-deep); color: var(--white)
 
 @media (max-width: 400px) {
   .shell { width: min(100% - 24px, 620px); }
-  .brand-name { display: none; }
+  .brand-name { display: grid; font-size: .62rem; }
+  .brand-name strong { font-size: .88rem; }
   .hero h1 { font-size: clamp(2.8rem, 15vw, 3.8rem); }
   .call-card { padding-inline: 18px; }
   .call-card-number { margin-inline: -18px; padding-inline: 18px; }
