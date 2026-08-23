@@ -148,6 +148,35 @@ summary:focus-visible {
 .brand-name strong { font-size: 1.02rem; }
 .brand-name span { color: var(--ink-soft); }
 
+.sticky-call {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 240;
+  min-height: 62px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: #16a36f;
+  color: var(--white);
+  border: 2px solid #d9ffe9;
+  border-radius: 9px;
+  box-shadow: 0 14px 30px rgb(6 27 42 / .28);
+  font-family: var(--font-mono);
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.sticky-call:hover {
+  background: #0c865a;
+  transform: translateY(-3px);
+  box-shadow: 0 18px 34px rgb(6 27 42 / .34);
+}
+
+.sticky-call-label { font-size: .85rem; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; }
+.sticky-call strong { font-size: .93rem; letter-spacing: -.03em; }
+.sticky-call > span:last-child { color: #d9ffe9; font-size: 1.25rem; }
+
 .desktop-nav {
   display: flex;
   align-items: center;
@@ -1274,6 +1303,18 @@ footer { padding: 48px 0 24px; background: var(--navy-deep); color: var(--white)
   .footer-main > p { text-align: left; }
   .footer-phone { justify-self: start; }
   .footer-bottom { display: grid; }
+
+  .sticky-call {
+    right: 14px;
+    bottom: 78px;
+    min-height: 52px;
+    padding: 9px 13px;
+    gap: 8px;
+    border-radius: 7px;
+  }
+
+  .sticky-call-label { font-size: .72rem; }
+  .sticky-call strong { font-size: .78rem; }
 
   .mobile-call-bar {
     position: fixed;

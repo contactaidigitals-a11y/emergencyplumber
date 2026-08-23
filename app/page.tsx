@@ -70,7 +70,7 @@ export default function Home() {
         <div className="shell header-inner">
           <a className="brand" href="#top" aria-label="Emergency Plumbers home">
             <span className="brand-mark" aria-hidden="true">EP</span>
-            <span className="brand-name"><strong>Emergency</strong><span>Plumbers</span></span>
+            <span className="brand-name"><strong>Emergency Plumbers</strong><span>24/7 across all CM postcodes</span></span>
           </a>
 
           <nav className="desktop-nav" aria-label="Main navigation">
@@ -80,7 +80,7 @@ export default function Home() {
             <a href="#faq">FAQs</a>
           </nav>
 
-          <a className="header-call" href={PHONE_HREF}>
+          <a className="header-call" href={PHONE_HREF} aria-label={`Call now ${PHONE_DISPLAY}`}>
             <span className="phone-dot" aria-hidden="true" />
             <span><small>Call now</small><strong>{PHONE_DISPLAY}</strong></span>
           </a>
@@ -230,7 +230,7 @@ export default function Home() {
 
       <footer>
         <div className="shell footer-main">
-          <a className="brand brand-footer" href="#top" aria-label="Emergency Plumbers home"><span className="brand-mark" aria-hidden="true">EP</span><span className="brand-name"><strong>Emergency</strong><span>Plumbers</span></span></a>
+          <a className="brand brand-footer" href="#top" aria-label="Emergency Plumbers home"><span className="brand-mark" aria-hidden="true">EP</span><span className="brand-name"><strong>Emergency Plumbers</strong><span>24/7 across all CM postcodes</span></span></a>
           <p>24/7 emergency plumbing help across every postcode beginning with CM.</p>
           <a className="footer-phone" href={PHONE_HREF}>Call {PHONE_DISPLAY}</a>
         </div>
@@ -239,6 +239,10 @@ export default function Home() {
 
       <a className="mobile-call-bar" href={PHONE_HREF} aria-label={`Call emergency plumber on ${PHONE_DISPLAY}`}>
         <span className="phone-dot" aria-hidden="true" /><span>Call emergency plumber</span><strong>{PHONE_DISPLAY}</strong>
+      </a>
+
+      <a className="sticky-call" href={PHONE_HREF} aria-label={`Call now ${PHONE_DISPLAY}`}>
+        <span className="sticky-call-label">Call now</span><strong>{PHONE_DISPLAY}</strong><span aria-hidden="true">↗</span>
       </a>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
