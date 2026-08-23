@@ -278,13 +278,15 @@ summary:focus-visible {
 .hero h1 {
   max-width: 780px;
   margin: 21px 0 24px;
-  font-size: clamp(3.25rem, 6.4vw, 5.9rem);
+  font-size: clamp(3rem, 5.7vw, 5.15rem);
   font-weight: 770;
   letter-spacing: -.071em;
   line-height: .92;
 }
 
 .hero h1 span { display: block; color: var(--blue); }
+
+.hero h1 span::first-line { color: var(--blue); }
 
 .hero-lead {
   max-width: 650px;
@@ -345,11 +347,13 @@ summary:focus-visible {
 
 .call-note {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 9px;
   margin: 21px 0 0;
   color: #64717a;
-  font-size: .79rem;
+  max-width: 660px;
+  font-size: .75rem;
+  line-height: 1.5;
 }
 
 .call-note > span {
@@ -362,6 +366,8 @@ summary:focus-visible {
   font-family: Georgia, serif;
   font-size: .73rem;
   font-weight: 800;
+  flex: 0 0 auto;
+  margin-top: 1px;
 }
 
 .call-card {

@@ -27,6 +27,10 @@ const faqs = [
     answer: "Yes — we serve every postcode beginning with CM. Give us your full postcode when you call so we can confirm current availability for your location.",
   },
   {
+    question: "How quickly can you arrive?",
+    answer: "Our nearest available plumber may be able to reach you in as little as 10 minutes. Your live arrival estimate depends on your postcode, traffic and engineer availability, and will be confirmed when you call.",
+  },
+  {
     question: "What should I tell you on the phone?",
     answer: "Tell us what has happened, where the water is coming from, whether you have been able to turn it off and your full CM postcode. A clear description helps us suggest the right next step.",
   },
@@ -44,10 +48,11 @@ export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Plumber",
-    name: "CM Emergency Plumbing",
+    name: "CM ReadyCall Plumbing",
     telephone: "+447443757519",
     areaServed: "CM postcode area, United Kingdom",
-    description: "Emergency plumbing help for homes and businesses across every CM postcode.",
+    openingHours: "Mo-Su 00:00-23:59",
+    description: "24/7 emergency plumbing help for homes and businesses across every CM postcode.",
   };
 
   return (
@@ -56,16 +61,16 @@ export default function Home() {
 
       <div className="topline">
         <div className="shell topline-inner">
-          <span>Emergency plumbing across every CM postcode</span>
+          <span>Open 24/7 • Emergency plumbing across every CM postcode</span>
           <a href={PHONE_HREF} aria-label={`Call ${PHONE_DISPLAY}`}>Call {PHONE_DISPLAY}</a>
         </div>
       </div>
 
       <header className="site-header">
         <div className="shell header-inner">
-          <a className="brand" href="#top" aria-label="CM Emergency Plumbing home">
+          <a className="brand" href="#top" aria-label="CM ReadyCall Plumbing home">
             <span className="brand-mark" aria-hidden="true">CM</span>
-            <span className="brand-name"><strong>Emergency</strong><span>Plumbing</span></span>
+            <span className="brand-name"><strong>ReadyCall</strong><span>Plumbing 24/7</span></span>
           </a>
 
           <nav className="desktop-nav" aria-label="Main navigation">
@@ -87,27 +92,27 @@ export default function Home() {
           <div className="hero-grid" aria-hidden="true" />
           <div className="shell hero-layout">
             <div className="hero-copy">
-              <div className="eyebrow"><span className="pulse" aria-hidden="true" />Emergency call-outs across CM</div>
-              <h1>Plumbing emergency?<span>Let’s get it under control.</span></h1>
+              <div className="eyebrow"><span className="pulse" aria-hidden="true" />All CM postcodes • Open 24/7</div>
+              <h1>24/7 emergency plumber.<span>At your door in as little as 10 minutes.</span></h1>
               <p className="hero-lead">
-                Straightforward help for leaks, burst pipes, blockages and other urgent plumbing problems at homes and businesses across the full CM postcode area.
+                Burst pipe, leak, blockage or no water? Call your local rapid-response plumber, serving every CM postcode day and night.
               </p>
               <div className="hero-actions">
-                <a className="button button-primary" href={PHONE_HREF}><span className="call-icon" aria-hidden="true">↗</span>Call {PHONE_DISPLAY}</a>
+                <a className="button button-primary" href={PHONE_HREF}><span className="call-icon" aria-hidden="true">↗</span>Call now — {PHONE_DISPLAY}</a>
                 <a className="button button-secondary" href="#services">View emergency services</a>
               </div>
-              <p className="call-note"><span aria-hidden="true">i</span>Have your postcode and a short description of the problem ready.</p>
+              <p className="call-note"><span aria-hidden="true">i</span>10-minute arrival may be available depending on postcode, traffic and engineer availability. We’ll confirm your live ETA by phone.</p>
             </div>
 
             <aside className="call-card" aria-label="What happens when you call">
               <div className="call-card-top">
-                <span>Emergency call guide</span>
-                <span className="availability-dot">Call to check availability</span>
+                <span>24/7 emergency call guide</span>
+                <span className="availability-dot">Live ETA confirmed by phone</span>
               </div>
-              <h2>When you call</h2>
+              <h2>Need us now?</h2>
               <ol>
                 <li><span>01</span><div><strong>Tell us what happened</strong><p>Describe the fault and where the water is coming from.</p></div></li>
-                <li><span>02</span><div><strong>Share your CM postcode</strong><p>We’ll check current availability for your area.</p></div></li>
+                <li><span>02</span><div><strong>Share your CM postcode</strong><p>We’ll check the nearest available plumber and your live ETA.</p></div></li>
                 <li><span>03</span><div><strong>Agree the next step</strong><p>We’ll explain what happens next before you book.</p></div></li>
               </ol>
               <a href={PHONE_HREF} className="call-card-number"><small>Tap to call</small><strong>{PHONE_DISPLAY}</strong><span aria-hidden="true">↗</span></a>
@@ -116,9 +121,9 @@ export default function Home() {
           </div>
 
           <div className="shell assurance-row" aria-label="Service highlights">
+            <div><span className="assurance-symbol" aria-hidden="true">24/7</span><p><strong>Open day & night</strong><span>Emergency calls 365 days</span></p></div>
+            <div><span className="assurance-symbol" aria-hidden="true">10</span><p><strong>From 10 minutes</strong><span>Subject to location & availability</span></p></div>
             <div><span className="assurance-symbol" aria-hidden="true">CM</span><p><strong>Every CM postcode</strong><span>Full area coverage</span></p></div>
-            <div><span className="assurance-symbol" aria-hidden="true">01</span><p><strong>One direct number</strong><span>Simple, clear contact</span></p></div>
-            <div><span className="assurance-symbol" aria-hidden="true">✓</span><p><strong>Homes & businesses</strong><span>Practical emergency help</span></p></div>
           </div>
         </section>
 
@@ -191,7 +196,7 @@ export default function Home() {
                 <span><i aria-hidden="true">✓</i> Respectful care in your property</span>
                 <span><i aria-hidden="true">✓</i> Homes, landlords & businesses</span>
               </div>
-              <small>Availability depends on location and current call-out demand.</small>
+              <small>10-minute arrival is not guaranteed and depends on postcode, traffic and current call-out demand.</small>
             </div>
           </div>
         </section>
@@ -217,7 +222,7 @@ export default function Home() {
         <section className="final-cta">
           <div className="final-cta-grid" aria-hidden="true" />
           <div className="shell final-cta-inner">
-            <div><span className="section-kicker light">Need a plumber now?</span><h2>Call and tell us the problem and your CM postcode.</h2></div>
+            <div><span className="section-kicker light">24/7 emergency plumber</span><h2>Call now for your live arrival time.</h2></div>
             <a className="final-call" href={PHONE_HREF}><small>Tap to call now</small><strong>{PHONE_DISPLAY}</strong><span aria-hidden="true">↗</span></a>
           </div>
         </section>
@@ -225,11 +230,11 @@ export default function Home() {
 
       <footer>
         <div className="shell footer-main">
-          <a className="brand brand-footer" href="#top" aria-label="CM Emergency Plumbing home"><span className="brand-mark" aria-hidden="true">CM</span><span className="brand-name"><strong>Emergency</strong><span>Plumbing</span></span></a>
-          <p>Emergency plumbing help across every postcode beginning with CM.</p>
+          <a className="brand brand-footer" href="#top" aria-label="CM ReadyCall Plumbing home"><span className="brand-mark" aria-hidden="true">CM</span><span className="brand-name"><strong>ReadyCall</strong><span>Plumbing 24/7</span></span></a>
+          <p>24/7 emergency plumbing help across every postcode beginning with CM.</p>
           <a className="footer-phone" href={PHONE_HREF}>Call {PHONE_DISPLAY}</a>
         </div>
-        <div className="shell footer-bottom"><span>CM Emergency Plumbing</span><span>Serving the complete CM postcode area</span></div>
+        <div className="shell footer-bottom"><span>CM ReadyCall Plumbing</span><span>Open 24/7 • Serving the complete CM postcode area</span></div>
       </footer>
 
       <a className="mobile-call-bar" href={PHONE_HREF} aria-label={`Call emergency plumber on ${PHONE_DISPLAY}`}>

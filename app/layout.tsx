@@ -13,25 +13,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Emergency Plumber Across All CM Postcodes | Call 07443 757 519",
+  metadataBase: new URL("https://cm-emergency-plumbing-help.andreiacalinescu.chatgpt.site"),
+  title: "CM ReadyCall Plumbing | 24/7 Emergency Plumber",
   description:
-    "Emergency plumbing help for leaks, burst pipes, blockages and urgent plumbing problems across every CM postcode. Call 07443 757 519.",
+    "24/7 emergency plumbing for leaks, burst pipes, blockages and urgent problems across every CM postcode. Call 07443 757 519.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "CM Emergency Plumbing",
+    title: "CM ReadyCall Plumbing | Open 24/7",
     description:
-      "Emergency plumbing help across every postcode beginning with CM. Call 07443 757 519.",
+      "24/7 emergency plumbing help across every postcode beginning with CM. Call 07443 757 519.",
+    images: [
+      {
+        url: "/og.png",
+        alt: "CM ReadyCall Plumbing — 24/7 emergency plumber across all CM postcodes",
+      },
+    ],
     type: "website",
     locale: "en_GB",
   },
   twitter: {
-    card: "summary",
-    title: "CM Emergency Plumbing",
+    card: "summary_large_image",
+    title: "CM ReadyCall Plumbing | Open 24/7",
     description:
-      "Emergency plumbing help across every postcode beginning with CM.",
+      "24/7 emergency plumbing help across every postcode beginning with CM.",
+    images: ["/og.png"],
   },
 };
 
