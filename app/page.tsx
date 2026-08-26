@@ -8,6 +8,9 @@ const services = [
   { number: "04", title: "Overflowing toilets", text: "Urgent assistance to control the overflow and identify the cause." },
   { number: "05", title: "No water or low pressure", text: "Checks to find the source of interrupted flow or a sudden pressure drop." },
   { number: "06", title: "Taps, valves & cisterns", text: "Repairs for faulty controls, running cisterns and troublesome fittings." },
+  { number: "07", title: "Pipe sealing & repairs", text: "Sealing, joining and repairing pipes to stop leaks and prevent further damage." },
+  { number: "08", title: "Radiator installation", text: "Fitting and replacing radiators, valves and heating connections around your property." },
+  { number: "09", title: "Boilers & central heating", text: "Help with boiler and central-heating plumbing, connections and urgent faults." },
 ];
 
 const areas = [
@@ -92,7 +95,7 @@ export default function Home() {
           <div className="shell hero-layout">
             <div className="hero-copy">
               <div className="eyebrow"><span className="pulse" aria-hidden="true" />All CM postcodes • Open 24/7</div>
-              <h1>24/7 emergency plumber.<span>At your door in as little as 10 minutes.</span></h1>
+              <h1><span>At your door in as little as 10 minutes.</span>24/7 emergency plumber.</h1>
               <p className="hero-lead">
                 Burst pipe, leak, blockage or no water? Call your local rapid-response plumber, serving every CM postcode day and night.
               </p>
